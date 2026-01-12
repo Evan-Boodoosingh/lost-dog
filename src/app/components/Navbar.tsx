@@ -22,7 +22,6 @@ export function Navbar() {
       const targetScroll = elementPosition - navbarHeight;
       const currentScroll = window.scrollY;
 
-      // Only scroll if we're not already at the target position (within 5px tolerance)
       if (Math.abs(currentScroll - targetScroll) > 5) {
         window.scrollTo({
           top: targetScroll,
@@ -40,9 +39,9 @@ export function Navbar() {
           <div className="flex items-center justify-between h-14">
             <button
               onClick={scrollToTop}
-              className="text-2xl cursor-pointer hover:scale-110 transition-transform"
+              className="hidden md:block text-white text-md font-medium hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300"
             >
-              🐾
+              Home
             </button>
 
             {!isMenuOpen && (
@@ -56,12 +55,6 @@ export function Navbar() {
 
             <div className="flex md:flex items-center">
               <div className="hidden md:flex items-center gap-2">
-                <button
-                  onClick={scrollToTop}
-                  className="text-white text-md font-medium hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300"
-                >
-                  Home
-                </button>
                 <button
                   onClick={() => handleNavClick("puppers")}
                   className="text-white text-md font-medium hover:bg-white/10 px-4 py-2 rounded-full transition-all duration-300"
@@ -80,39 +73,37 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsMenuOpen(false)}
           />
-          <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-11/12 max-w-md bg-gradient-to-br from-purple-500/90 via-pink-500/90 to-yellow-500/90 backdrop-blur-xl rounded-3xl border-2 border-white/30 shadow-2xl p-6">
-            <div className="flex justify-between items-center mb-6">
-              <span className="text-2xl">🐾</span>
+          <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-11/12 max-w-xs bg-gradient-to-br from-purple-500/90 via-pink-500/90 to-yellow-500/90 backdrop-blur-xl rounded-2xl border-2 border-white/30 shadow-2xl p-4">
+            <div className="flex justify-end items-center mb-3">
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="text-white hover:bg-white/10 p-2 rounded-full transition-all"
+                className="text-white hover:bg-white/10 p-1 rounded-full transition-all"
               >
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               </button>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
               <button
                 onClick={scrollToTop}
-                className="text-white text-lg font-medium hover:bg-white/20 px-6 py-3 rounded-full transition-all duration-300 text-left"
+                className="text-white text-base font-medium hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 text-left"
               >
                 🏠 Home
               </button>
               <button
                 onClick={() => handleNavClick("puppers")}
-                className="text-white text-lg font-medium hover:bg-white/20 px-6 py-3 rounded-full transition-all duration-300 text-left"
+                className="text-white text-base font-medium hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 text-left"
               >
                 🐕 The Puppers
               </button>
               <button
                 onClick={() => handleNavClick("contact")}
-                className="text-white text-lg font-medium hover:bg-white/20 px-6 py-3 rounded-full transition-all duration-300 text-left"
+                className="text-white text-base font-medium hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 text-left"
               >
                 ✉️ Contact
               </button>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   DogProfile,
   HeroSection,
@@ -7,7 +7,6 @@ import {
   DogCardsSection,
   QuoteSection,
   ContactSection,
-  SocialLinks,
   Footer,
   Navbar,
 } from "./components";
@@ -19,6 +18,10 @@ type View = "home" | "griz" | "korra";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<View>("home");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentView]);
 
   if (currentView === "griz") {
     return (
@@ -92,14 +95,12 @@ export default function App() {
         <FloatingBackground />
         <Navbar />
 
-        <div className="relative z-10 px-4 py-12">
-          {/* Section 1: Hero + Owner Info Card */}
+        <div className="relative z-10 px-4 py-12 pt-24">
           <div className="min-h-screen flex flex-col justify-center">
             <HeroSection />
             <OwnerInfoCard />
           </div>
 
-          {/* Section 2: Dog Cards + Quote */}
           <div
             id="puppers"
             className="min-h-screen flex flex-col justify-center py-12 scroll-mt-24"
@@ -115,7 +116,6 @@ export default function App() {
             />
           </div>
 
-          {/* Section 3: Contact */}
           <div
             id="contact"
             className="min-h-screen flex flex-col justify-center pb-2 scroll-mt-24"
@@ -123,7 +123,6 @@ export default function App() {
             <ContactSection />
           </div>
 
-          {/* <SocialLinks /> */}
           <Footer />
         </div>
       </div>
