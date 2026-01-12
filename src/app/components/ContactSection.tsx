@@ -17,9 +17,9 @@ export function ContactSection() {
         <p className="text-base md:text-lg lg:text-xl text-white drop-shadow-lg">
           "A place where someone still thinks about you is a place you can call home." - Jiraiya
           <br />
-          <span className="text-base md:text-xl">
+          {/* <span className="text-base md:text-xl">
             (Keep the faith and help me find my pups!)
-          </span>
+          </span> */}
         </p>
       </div>
       <ContactForm />
