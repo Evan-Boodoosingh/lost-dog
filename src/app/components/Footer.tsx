@@ -13,8 +13,9 @@ export function Footer() {
         Korra<span className="hidden sm:inline"> 🌸</span>
       </p>
       <p className="text-xl text-white/80 mt-2">
-        "Plus Ultra!" - All Might (Let's go beyond in getting them Home!)
+        "Plus Ultra!" - All Might 
       </p>
+      <p className="text-xl text-white/80">(Let's go beyond in getting them Home!)</p>
       <p className="text-xs text-white/60 mt-3">
         © 2026 Evan Boodoosingh. All rights reserved.
       </p>
