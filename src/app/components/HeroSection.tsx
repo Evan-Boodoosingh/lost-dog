@@ -20,7 +20,8 @@ export function HeroSection() {
         }}
         transition={{ duration: 3, repeat: Infinity }}
       >
-        <span className="hidden sm:inline">🐾 </span>Found My Dog?<span className="hidden sm:inline"> 🐾</span>
+        <span className="hidden sm:inline">🐾 </span>Found My Dog?
+        <span className="hidden sm:inline"> 🐾</span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
