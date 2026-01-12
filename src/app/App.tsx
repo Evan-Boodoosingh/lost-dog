@@ -108,7 +108,7 @@ export default function App() {
         <FloatingBackground />
         <Navbar />
 
-        <div className="relative z-10 px-4 py-12 pt-24">
+        <div className="relative z-10 px-4 py-12 pt-16 md:pt-24">
           <div className="min-h-screen flex flex-col justify-center">
             <HeroSection />
             <OwnerInfoCard />

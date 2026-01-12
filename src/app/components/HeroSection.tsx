@@ -6,10 +6,10 @@ export function HeroSection() {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="text-center mb-16 px-4 w-full max-w-6xl mx-auto"
+      className="text-center mb-6 md:mb-16 px-4 w-full max-w-6xl mx-auto"
     >
       <motion.h1
-        className="text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 text-white drop-shadow-2xl leading-tight mx-auto break-words"
+        className="text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-6 md:mb-12 text-white drop-shadow-2xl leading-tight mx-auto break-words"
         animate={{
           textShadow: [
             "0 0 20px rgba(168, 85, 247, 0.5)",
@@ -27,7 +27,7 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white drop-shadow-lg mb-4 px-2"
+        className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white drop-shadow-lg mb-2 md:mb-4 px-2"
       >
         "Some friendships are so strong, they can even transcend lifetimes."
       </motion.p>

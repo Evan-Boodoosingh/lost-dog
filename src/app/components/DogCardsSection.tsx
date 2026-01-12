@@ -14,7 +14,7 @@ export function DogCardsSection({
   onViewKorra,
 }: DogCardsSectionProps) {
   return (
-    <div className="max-w-6xl mx-auto mb-16">
+    <div className="max-w-6xl mx-auto mb-8 md:mb-16">
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
