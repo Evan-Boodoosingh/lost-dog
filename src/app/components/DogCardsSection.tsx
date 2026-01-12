@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Search } from "lucide-react";
 import { DogCard } from "./DogCard";
-import grizImage from "./images/GRiZ.JPG";
+import grizImage from "./images/GRiZ.jpeg";
 import korraImage from "./images/Korra.jpeg";
 
 interface DogCardsSectionProps {
@@ -49,7 +49,7 @@ export function DogCardsSection({
           onClick={onViewKorra}
           delay={0.8}
           direction="right"
-          objectPositionY="28%"
+          objectPositionY="16%"
         />
       </div>
     </div>

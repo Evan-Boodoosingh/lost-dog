@@ -50,7 +50,7 @@ export function DogProfile({
           transition={{ delay: 0.2 }}
           className="bg-gradient-to-br from-purple-500/30 via-pink-500/30 to-yellow-500/30 backdrop-blur-lg rounded-3xl p-8 border-4 border-white/40 shadow-2xl mb-12"
         >
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Image Section */}
             <div className="relative">
               <motion.div
@@ -61,7 +61,7 @@ export function DogProfile({
                 <img
                   src={imageUrl}
                   alt={name}
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[745px] object-cover"
                   style={{ objectPosition: `center ${objectPositionY}` }}
                 />
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full text-2xl shadow-lg">

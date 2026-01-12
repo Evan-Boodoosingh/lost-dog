@@ -44,7 +44,7 @@ export function DogCard({
         <img
           src={imageUrl}
           alt={name}
-          className="w-full h-64 object-cover"
+          className="w-full h-80 object-cover"
           style={{ objectPosition: `center ${objectPositionY}` }}
         />
         <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full text-xl">

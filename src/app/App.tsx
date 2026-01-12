@@ -11,7 +11,7 @@ import {
   Navbar,
 } from "./components";
 import { Toaster } from "./components/ui/sonner";
-import grizImage from "./components/images/GRiZ.JPG";
+import grizImage from "./components/images/GRiZ.jpeg";
 import korraImage from "./components/images/Korra.jpeg";
 
 type View = "home" | "griz" | "korra";
@@ -62,10 +62,10 @@ export default function App() {
         <div className="min-h-screen bg-gradient-to-br from-purple-900 via-fuchsia-600 to-indigo-700 animate-gradient">
           <DogProfile
             name="Korra"
-            breed="Unknown"
-            age="Unknown"
-            color="Unknown"
-            weight="Unknown"
+            breed="Black Mouth Cur / Hound"
+            age="2 Years Old"
+            color="Brown and White"
+            weight="35 Pounds"
             personality={[
               "🌊 Named after Avatar Korra!",
               "💪 Strong & Independent",
@@ -81,7 +81,7 @@ export default function App() {
               "Recognizes familiar voices and faces",
             ]}
             onBack={() => setCurrentView("home")}
-            objectPositionY="40%"
+            objectPositionY="25%"
           />
         </div>
         <Toaster />
@@ -103,7 +103,7 @@ export default function App() {
 
           <div
             id="puppers"
-            className="min-h-screen flex flex-col justify-center py-12 scroll-mt-24"
+            className="min-h-screen flex flex-col justify-center pt-12 pb-0 scroll-mt-24"
           >
             <DogCardsSection
               onViewGriz={() => setCurrentView("griz")}
