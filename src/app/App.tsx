@@ -18,10 +18,23 @@ type View = "home" | "griz" | "korra";
 
 export default function App() {
   const [currentView, setCurrentView] = useState<View>("home");
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleViewChange = (view: View) => {
+    if (currentView === "home") {
+      setScrollPosition(window.scrollY);
+    }
+    setCurrentView(view);
+    if (view !== "home") {
+      window.scrollTo(0, 0);
+    }
+  };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [currentView]);
+    if (currentView === "home" && scrollPosition > 0) {
+      window.scrollTo(0, scrollPosition);
+    }
+  }, [currentView, scrollPosition]);
 
   if (currentView === "griz") {
     return (
@@ -47,7 +60,7 @@ export default function App() {
               "Might be hanging out near parks or dog-friendly areas",
               "Very social and approachable",
             ]}
-            onBack={() => setCurrentView("home")}
+            onBack={() => handleViewChange("home")}
             objectPositionY="42%"
           />
         </div>
@@ -80,7 +93,7 @@ export default function App() {
               "Loves exploring new places",
               "Recognizes familiar voices and faces",
             ]}
-            onBack={() => setCurrentView("home")}
+            onBack={() => handleViewChange("home")}
             objectPositionY="25%"
           />
         </div>
@@ -106,8 +119,8 @@ export default function App() {
             className="min-h-screen flex flex-col justify-center pt-12 pb-0 scroll-mt-24"
           >
             <DogCardsSection
-              onViewGriz={() => setCurrentView("griz")}
-              onViewKorra={() => setCurrentView("korra")}
+              onViewGriz={() => handleViewChange("griz")}
+              onViewKorra={() => handleViewChange("korra")}
             />
             <QuoteSection
               quote="No matter what happens, as long as we're alive, we'll see each other again."
