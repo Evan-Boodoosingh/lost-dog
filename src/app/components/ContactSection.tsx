@@ -19,7 +19,7 @@ export function ContactSection() {
           faith." - Itachi
           <br />
           <span className="text-base md:text-xl">
-            (Keep the faith and help me find my buddies!)
+            (Keep the faith and help me find my pups!)
           </span>
         </p>
       </div>

@@ -49,7 +49,7 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen((prev) => !prev)}
                 className="text-2xl absolute right-6 z-40 md:hidden cursor-pointer text-white hover:bg-white/10 p-2 rounded-full transition-all"
               >
-                <Menu />
+                <Menu className="w-7 h-7" />
               </div>
             )}
 
@@ -79,31 +79,31 @@ export function Navbar() {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsMenuOpen(false)}
           />
-          <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-11/12 max-w-xs bg-gradient-to-br from-purple-500/90 via-pink-500/90 to-yellow-500/90 backdrop-blur-xl rounded-2xl border-2 border-white/30 shadow-2xl p-4">
-            <div className="flex justify-end items-center mb-3">
+          <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-11/12 max-w-md bg-gradient-to-br from-purple-500/90 via-pink-500/90 to-yellow-500/90 backdrop-blur-xl rounded-2xl border-2 border-white/30 shadow-2xl p-6">
+            <div className="flex justify-end items-center mb-4">
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="text-white hover:bg-white/10 p-1 rounded-full transition-all"
+                className="text-white hover:bg-white/10 p-2 rounded-full transition-all"
               >
-                <X className="w-5 h-5" />
+                <X className="w-6 h-6" />
               </button>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
               <button
                 onClick={scrollToTop}
-                className="text-white text-base font-medium hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 text-left"
+                className="text-white text-lg font-medium hover:bg-white/20 px-6 py-3.5 rounded-full transition-all duration-300 text-left"
               >
                 🏠 Home
               </button>
               <button
                 onClick={() => handleNavClick("puppers")}
-                className="text-white text-base font-medium hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 text-left"
+                className="text-white text-lg font-medium hover:bg-white/20 px-6 py-3.5 rounded-full transition-all duration-300 text-left"
               >
                 🐕 The Puppers
               </button>
               <button
                 onClick={() => handleNavClick("contact")}
-                className="text-white text-base font-medium hover:bg-white/20 px-5 py-2.5 rounded-full transition-all duration-300 text-left"
+                className="text-white text-lg font-medium hover:bg-white/20 px-6 py-3.5 rounded-full transition-all duration-300 text-left"
               >
                 ✉️ Contact
               </button>

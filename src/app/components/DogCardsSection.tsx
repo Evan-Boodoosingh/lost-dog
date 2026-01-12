@@ -20,11 +20,9 @@ export function DogCardsSection({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.8 }}
         transition={{ type: "spring", stiffness: 200, damping: 25 }}
-        className="text-5xl text-center mb-12 text-white drop-shadow-xl flex items-center justify-center gap-4"
+        className="text-5xl text-center mb-12 text-white drop-shadow-xl"
       >
-        <Search className="w-12 h-12" />
         Meet the Puppers
-        <Search className="w-12 h-12" />
       </motion.h2>
 
       <div className="grid md:grid-cols-2 gap-8">

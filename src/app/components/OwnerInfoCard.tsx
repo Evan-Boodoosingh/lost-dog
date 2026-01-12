@@ -14,7 +14,7 @@ export function OwnerInfoCard() {
         <div className="flex items-center justify-center gap-4 mb-6">
           <Sparkles className="w-10 h-10 text-yellow-300" />
           <h2 className="text-4xl text-center text-white drop-shadow-lg">
-            Please Help Find Them!
+            Please Help Me Find Them!
           </h2>
           <Sparkles className="w-10 h-10 text-yellow-300" />
         </div>
@@ -42,9 +42,9 @@ export function OwnerInfoCard() {
             ""I'm going to bring them back... I'll keep that promise even if it
             kills me!" — Naruto Uzumaki
             <br />
-            <span className="text-lg">
-              (And believe we'll find these puppers!)
-            </span>
+            {/* <span className="text-lg">
+              (And believe me we'll find these puppers!)
+            </span> */}
           </p>
         </div>
       </div>

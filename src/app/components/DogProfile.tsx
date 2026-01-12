@@ -150,7 +150,7 @@ export function DogProfile({
         >
           <div className="text-center mb-8">
             <h2 className="text-5xl mb-4 text-white">Spotted {name}? 🎯</h2>
-            <p className="text-2xl text-gray-700">
+            <p className="text-2xl text-white">
               "While it is always best to believe in oneself, a little help from
               others can be a great blessing." — Uncle Iroh
             </p>
