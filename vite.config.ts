@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/lost-dog/",
+  base: process.env.NODE_ENV === 'production' ? '/lost-dog/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
