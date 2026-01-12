@@ -9,7 +9,8 @@ export function Footer() {
       className="text-center pt-2"
     >
       <p className="text-2xl text-white drop-shadow-lg">
-        🌸 Made with ❤️ for GRiZ & Korra 🌸
+        <span className="hidden sm:inline">🌸 </span>Made with ❤️ for GRiZ &
+        Korra<span className="hidden sm:inline"> 🌸</span>
       </p>
       <p className="text-xl text-white/80 mt-2">
         "Plus Ultra!" - All Might (Let's go beyond in getting them Home!)
