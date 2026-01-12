@@ -10,7 +10,7 @@ export function ContactSection() {
       transition={{ type: "spring", stiffness: 200, damping: 25 }}
       className="max-w-4xl mx-auto space-y-4 md:space-y-6"
     >
-      <div className="text-center space-y-2 md:space-y-4">
+      <div className="text-center space-y-2 md:space-y-4 pt-10 md:pt-0">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-white drop-shadow-2xl">
           Seen Them? Let's Connect! 🎯
         </h2>

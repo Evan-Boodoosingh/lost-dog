@@ -131,7 +131,7 @@ export default function App() {
 
           <div
             id="contact"
-            className="min-h-screen flex flex-col justify-center pb-2 scroll-mt-24"
+            className="min-h-screen flex flex-col justify-center scroll-mt-24"
           >
             <ContactSection />
           </div>

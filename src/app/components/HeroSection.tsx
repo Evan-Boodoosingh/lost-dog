@@ -9,7 +9,7 @@ export function HeroSection() {
       className="text-center mb-16 px-4 w-full max-w-6xl mx-auto"
     >
       <motion.h1
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 text-white drop-shadow-2xl leading-tight mx-auto break-words"
+        className="text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 text-white drop-shadow-2xl leading-tight mx-auto break-words"
         animate={{
           textShadow: [
             "0 0 20px rgba(168, 85, 247, 0.5)",
@@ -20,7 +20,7 @@ export function HeroSection() {
         }}
         transition={{ duration: 3, repeat: Infinity }}
       >
-        🐾 "Found My Dog?" 🐾
+        <span className="hidden sm:inline">🐾 </span>Found My Dog?<span className="hidden sm:inline"> 🐾</span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
