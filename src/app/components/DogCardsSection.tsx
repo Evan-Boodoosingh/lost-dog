@@ -29,7 +29,7 @@ export function DogCardsSection({
         <DogCard
           name="GRiZ"
           title="GRiZ the Labradoodle"
-          emoji="🎸"
+          emoji="🎷"
           imageUrl={grizImage}
           quote="We're all in this together. If we can just show a little more love and spread a little more love, we can make the world a better place. — GRiZ"
           onClick={onViewGriz}

@@ -47,7 +47,7 @@ export default function App() {
             color="Black"
             weight="Medium-Large"
             personality={[
-              "🎸 Named after the DJ!",
+              "🎷 Named after the DJ!",
               "🌟 Super Friendly",
               "💝 Loves Everyone",
               "🎾 Playful & Energetic",
