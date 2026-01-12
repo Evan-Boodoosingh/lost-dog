@@ -64,8 +64,8 @@ export function DogProfile({
                   className="w-full h-[745px] object-cover"
                   style={{ objectPosition: `center ${objectPositionY}` }}
                 />
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full text-2xl shadow-lg">
-                  {name} <Heart className="inline w-6 h-6 ml-2" />
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full text-2xl shadow-lg flex items-center">
+                  {name} <Heart className="w-6 h-6 ml-2" />
                 </div>
               </motion.div>
             </div>
