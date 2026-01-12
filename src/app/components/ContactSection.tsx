@@ -15,8 +15,7 @@ export function ContactSection() {
           Got My Dog? Let's Connect! 🎯
         </h2>
         <p className="text-base md:text-lg lg:text-xl text-white drop-shadow-lg">
-          "People's lives don't end when they die. It ends when they lose
-          faith." - Itachi
+          "A place where someone still thinks about you is a place you can call home." - Jiraiya
           <br />
           <span className="text-base md:text-xl">
             (Keep the faith and help me find my pups!)
