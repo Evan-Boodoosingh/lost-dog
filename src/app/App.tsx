@@ -11,8 +11,8 @@ import {
   Navbar,
 } from "./components";
 import { Toaster } from "./components/ui/sonner";
-import grizImage from "./components/images/GRiZ.jpeg";
-import korraImage from "./components/images/Korra.jpeg";
+import grizImage from "./components/images/GRiZ.png";
+import korraImage from "./components/images/Korra.png";
 
 type View = "home" | "griz" | "korra";
 

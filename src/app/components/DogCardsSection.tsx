@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { Search } from "lucide-react";
 import { DogCard } from "./DogCard";
-import grizImage from "./images/GRiZ.jpeg";
-import korraImage from "./images/Korra.jpeg";
+import grizImage from "./images/GRiZ.png";
+import korraImage from "./images/Korra.png";
 
 interface DogCardsSectionProps {
   onViewGriz: () => void;
